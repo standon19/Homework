@@ -26,12 +26,16 @@ for (String num: address)
 	count+=1;
 	lengthtotal += num.length();
 	
+	if (num.contains(".") || num.contains(",") || num.contains("-") || num.contains(" "))
+	{}
+	else {
+	
 	if (max.length() < num.length())
 	{
 		max = num;
 	}
 
-}
+}}
 System.out.println("The longest word in the address is \"" + max + "\".");			
 System.out.println("The average word length in the address is " + lengthtotal/count + " characters.");
 	}}
